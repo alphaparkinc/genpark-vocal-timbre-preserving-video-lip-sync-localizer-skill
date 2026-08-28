@@ -1,0 +1,38 @@
+{
+  "name": "genpark-vocal-timbre-preserving-video-lip-sync-localizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vocal timbre preserving video lip-sync localizer re-rendering mouth phonemes and dubbing multilingual audio tracks.",
+  "author": "genpark",
+  "category": "video-localization",
+  "tags": [
+    "product-hunt",
+    "captions-ai",
+    "lip-sync",
+    "video-dubbing",
+    "voice-cloning"
+  ],
+  "inputs": {
+    "source_video_url": {
+      "type": "string"
+    },
+    "target_language": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "localization_job_id": {
+      "type": "string"
+    },
+    "target_language": {
+      "type": "string"
+    },
+    "vocal_timbre_similarity_score_pct": {
+      "type": "number"
+    },
+    "rendered_dubbed_video_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
